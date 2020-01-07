@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/docker/machine/libmachine/drivers/plugin"
-	"github.com/huawei/DockerMachineDriver4OTC/otc"
+	"github.com/opentelekomcloud/DockerMachineDriver/otc"
 )
 
 func main() {
