@@ -16,7 +16,7 @@
 package novaModules
 
 import (
-	"github.com/huawei/DockerMachineDriver4OTC/com/modules"
+	"github.com/opentelekomcloud/DockerMachineDriver/com/modules"
 )
 
 /* The request Params need by createKeypair Start */

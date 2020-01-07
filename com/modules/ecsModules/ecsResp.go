@@ -16,7 +16,7 @@
 package ecsModules
 
 import (
-	"github.com/huawei/DockerMachineDriver4OTC/com/modules"
+	"github.com/opentelekomcloud/DockerMachineDriver/com/modules"
 )
 
 /*

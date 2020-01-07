@@ -23,7 +23,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/docker/machine/libmachine/log"
-	"github.com/huawei/DockerMachineDriver4OTC/com/modules"
+	"github.com/opentelekomcloud/DockerMachineDriver/com/modules"
 	"io/ioutil"
 	"net"
 	"net/http"

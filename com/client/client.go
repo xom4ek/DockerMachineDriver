@@ -18,8 +18,8 @@ package client
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/huawei/DockerMachineDriver4OTC/com/cpp_sdk_core"
-	"github.com/huawei/DockerMachineDriver4OTC/com/modules"
+	"github.com/opentelekomcloud/DockerMachineDriver/com/cpp_sdk_core"
+	"github.com/opentelekomcloud/DockerMachineDriver/com/modules"
 	"time"
 )
 
