@@ -80,11 +80,11 @@ Each environment variable may be overloaded by its option equivalent at runtime.
 ```bash
 yum install golang git
 ```
-### Install DockerMachineDriver4OTC
+### Install DockerMachineDriver
 ```bash
 export GOPATH=<Path to your Go Build Folder>
-go get github.com/huawei/DockerMachineDriver4OTC
-cd $GOPATH/src/github.com/huawei/DockerMachineDriver4OTC
+go get github.com/opentelekomcloud/DockerMachineDriver
+cd $GOPATH/src/github.com/opentelekomcloud/DockerMachineDriver
 ./build.sh
 ```
 The Driver Binary will be under ./bin/docker-machine-driver.linux-amd64
@@ -95,19 +95,15 @@ cp ./bin/docker-machine-driver.linux-amd64 /usr/local/bin/docker-machine-driver-
 
 Alternatively you can also just rename it and add the folder to your ```$PATH```:
 ```
-export PATH=$GOPATH/src/github.com/huawei/DockerMachineDriver4OTC:$PATH
+export PATH=$GOPATH/src/github.com/opentelekomcloud/DockerMachineDriver:$PATH
 ```
-
-### Binary direct download
-You can also directly download the Binary from here:
-https://dockermachinedriver.obs.eu-de.otc.t-systems.com/docker-machine-driver-otc
 
 
 ## Related links
 
 - **Docker Machine**: https://docs.docker.com/machine/
-- **Contribute**: https://github.com/huawei/DockerMachineDriver4OTC
-- **Report bugs**: https://github.com/huawei/DockerMachineDriver4OTC/issues
+- **Contribute**: https://github.com/opentelekomcloud/DockerMachineDriver
+- **Report bugs**: https://github.com/opentelekomcloud/DockerMachineDriver/issues
 
 ## License
 Apache 2.0
