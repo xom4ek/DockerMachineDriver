@@ -17,9 +17,9 @@ package client
 
 import (
 	"encoding/json"
-	"github.com/opentelekomcloud/DockerMachineDriver/com/cpp_sdk_core"
-	"github.com/opentelekomcloud/DockerMachineDriver/com/modules"
-	"github.com/opentelekomcloud/DockerMachineDriver/com/modules/neutronModules"
+	"github.com/xom4ek/DockerMachineDriver/com/cpp_sdk_core"
+	"github.com/xom4ek/DockerMachineDriver/com/modules"
+	"github.com/xom4ek/DockerMachineDriver/com/modules/neutronModules"
 )
 
 /*

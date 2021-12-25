@@ -26,7 +26,7 @@ docker-machine create -d otc --otc-access-key-id=<Your ak> --otc-access-key-secr
 ```bash
 docker-machine create -d otc --help
 ```
-Option Name                                          | Description                                         | required 
+Option Name                                          | Description                                         | required
 ------------------------------------------------------|----------------------------------------------------|----|
 ``--otc-access-key-id`` | Your access key ID.  |**yes**|
 ``--otc-access-key-secret``|Your secret access key.| **yes** |
@@ -83,8 +83,8 @@ yum install golang git
 ### Install DockerMachineDriver
 ```bash
 export GOPATH=<Path to your Go Build Folder>
-go get github.com/opentelekomcloud/DockerMachineDriver
-cd $GOPATH/src/github.com/opentelekomcloud/DockerMachineDriver
+go get github.com/xom4ek/DockerMachineDriver
+cd $GOPATH/src/github.com/xom4ek/DockerMachineDriver
 ./build.sh
 ```
 The Driver Binary will be under ./bin/docker-machine-driver.linux-amd64
@@ -95,15 +95,15 @@ cp ./bin/docker-machine-driver-otc.linux-amd64 /usr/local/bin/docker-machine-dri
 
 Alternatively you can also just rename it and add the folder to your ```$PATH```:
 ```
-export PATH=$GOPATH/src/github.com/opentelekomcloud/DockerMachineDriver:$PATH
+export PATH=$GOPATH/src/github.com/xom4ek/DockerMachineDriver:$PATH
 ```
 
 
 ## Related links
 
 - **Docker Machine**: https://docs.docker.com/machine/
-- **Contribute**: https://github.com/opentelekomcloud/DockerMachineDriver
-- **Report bugs**: https://github.com/opentelekomcloud/DockerMachineDriver/issues
+- **Contribute**: https://github.com/xom4ek/DockerMachineDriver
+- **Report bugs**: https://github.com/xom4ek/DockerMachineDriver/issues
 
 ## License
 Apache 2.0

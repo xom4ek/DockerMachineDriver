@@ -8,8 +8,8 @@ import (
 	"net/http"
 
 	"github.com/docker/machine/libmachine/log"
-	"github.com/opentelekomcloud/DockerMachineDriver/otcgo/common"
-	"github.com/opentelekomcloud/DockerMachineDriver/otcgo/signer"
+	"github.com/xom4ek/DockerMachineDriver/otcgo/common"
+	"github.com/xom4ek/DockerMachineDriver/otcgo/signer"
 )
 
 const (

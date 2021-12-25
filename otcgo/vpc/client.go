@@ -9,8 +9,8 @@ import (
 	_ "time"
 
 	"github.com/docker/machine/libmachine/log"
-	"github.com/opentelekomcloud/DockerMachineDriver/otcgo/common"
-	"github.com/opentelekomcloud/DockerMachineDriver/otcgo/signer"
+	"github.com/xom4ek/DockerMachineDriver/otcgo/common"
+	"github.com/xom4ek/DockerMachineDriver/otcgo/signer"
 )
 
 const (
@@ -54,7 +54,7 @@ func (client *Client) Do(region, method, uri string, args interface{}) (respbyte
 	}
 	//compose request URL
 	requestURL := client.Endpoint + "/" + client.Version + uri
-	//requestURL := client.Endpoint + "/v2/cloudimages"  //check images list
+	//requestURL := client.Endpoint + "/v2.1/cloudimages"  //check images list
 	//requestURL := client.Endpoint + "/v1/15eae18081ba40fabd76979bdbf35d0e/cloudservers/flavors"  //check flavors list
 	if args != nil {
 		req, errl = http.NewRequest(method, requestURL, bytes.NewReader(b))

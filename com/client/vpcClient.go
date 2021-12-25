@@ -18,9 +18,9 @@ package client
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/opentelekomcloud/DockerMachineDriver/com/cpp_sdk_core"
-	"github.com/opentelekomcloud/DockerMachineDriver/com/modules"
-	"github.com/opentelekomcloud/DockerMachineDriver/com/modules/vpcModules"
+	"github.com/xom4ek/DockerMachineDriver/com/cpp_sdk_core"
+	"github.com/xom4ek/DockerMachineDriver/com/modules"
+	"github.com/xom4ek/DockerMachineDriver/com/modules/vpcModules"
 )
 
 /*

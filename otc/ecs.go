@@ -11,16 +11,16 @@ import (
 	"strings"
 	"time"
 
-	_ "github.com/opentelekomcloud/DockerMachineDriver/otcgo/ecs"
-	_ "github.com/opentelekomcloud/DockerMachineDriver/otcgo/ims"
-	_ "github.com/opentelekomcloud/DockerMachineDriver/otcgo/vpc"
+	_ "github.com/xom4ek/DockerMachineDriver/otcgo/ecs"
+	_ "github.com/xom4ek/DockerMachineDriver/otcgo/ims"
+	_ "github.com/xom4ek/DockerMachineDriver/otcgo/vpc"
 
-	"github.com/opentelekomcloud/DockerMachineDriver/com/client"
-	"github.com/opentelekomcloud/DockerMachineDriver/com/modules"
-	"github.com/opentelekomcloud/DockerMachineDriver/com/modules/ecsModules"
-	"github.com/opentelekomcloud/DockerMachineDriver/com/modules/imsModules"
-	"github.com/opentelekomcloud/DockerMachineDriver/com/modules/novaModules"
-	"github.com/opentelekomcloud/DockerMachineDriver/com/modules/vpcModules"
+	"github.com/xom4ek/DockerMachineDriver/com/client"
+	"github.com/xom4ek/DockerMachineDriver/com/modules"
+	"github.com/xom4ek/DockerMachineDriver/com/modules/ecsModules"
+	"github.com/xom4ek/DockerMachineDriver/com/modules/imsModules"
+	"github.com/xom4ek/DockerMachineDriver/com/modules/novaModules"
+	"github.com/xom4ek/DockerMachineDriver/com/modules/vpcModules"
 
 	"github.com/docker/machine/libmachine/drivers"
 	"github.com/docker/machine/libmachine/log"
@@ -643,9 +643,9 @@ func (d *Driver) checkJobStatus(jobid string) error {
 func (d *Driver) configureNetwork() error {
 
 	// Exit if ElasticIp is set to false
-	if d.ElasticIpBool == 0 { 
+	if d.ElasticIpBool == 0 {
 		log.Infof("%s | An ElasticIp won't be allocated", d.MachineName)
-		return nil 
+		return nil
 	}
 
 	log.Debugf("%s | Allocate elastic ip ...", d.MachineName)

@@ -17,9 +17,9 @@ package client
 
 import (
 	"encoding/json"
-	"github.com/opentelekomcloud/DockerMachineDriver/com/cpp_sdk_core"
-	"github.com/opentelekomcloud/DockerMachineDriver/com/modules"
-	"github.com/opentelekomcloud/DockerMachineDriver/com/modules/imsModules"
+	"github.com/xom4ek/DockerMachineDriver/com/cpp_sdk_core"
+	"github.com/xom4ek/DockerMachineDriver/com/modules"
+	"github.com/xom4ek/DockerMachineDriver/com/modules/imsModules"
 )
 
 /*
@@ -32,7 +32,7 @@ import (
 */
 func (client *Client) ListCloudImages(listCloudImagesReqEx *imsModules.ListCloudImagesReqEx) *imsModules.ListCloudImagesResp {
 	ListCloudImagesResp := &imsModules.ListCloudImagesResp{}
-	client.RequestParam.Url = "https://ims." +  client.RequestParam.Endpoint + "/v2/cloudimages" + listCloudImagesReqEx.GetAbsolutePath()
+	client.RequestParam.Url = "https://ims." +  client.RequestParam.Endpoint + "/v2.1/cloudimages" + listCloudImagesReqEx.GetAbsolutePath()
 	client.RequestParam.Method = "GET"
 	client.RequestParam.BodyContent = ""
 

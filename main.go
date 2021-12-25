@@ -1,8 +1,9 @@
 package main
 
 import (
+	// github.com/docker/machine
 	"github.com/docker/machine/libmachine/drivers/plugin"
-	"github.com/opentelekomcloud/DockerMachineDriver/otc"
+	"github.com/xom4ek/DockerMachineDriver/otc"
 )
 
 func main() {
